@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <parameter name="BrowserName" value="Chrome"></parameter>
   <classes>
   <class name="com.Test.VerifyLoginTest"></class>
   <class name="com.Test.VerifyHomepageTest"></class>

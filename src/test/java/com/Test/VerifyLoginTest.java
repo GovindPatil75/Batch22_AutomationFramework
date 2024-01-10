@@ -1,7 +1,5 @@
 package com.Test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -17,8 +15,11 @@ public class VerifyLoginTest extends BaseClass{
 		
 		LoginPom login=PageFactory.initElements(driver, LoginPom.class);
 		
-	    Library.custom_SendKeys(login.getEmail(), "Test");
-	    Library.custom_SendKeys(login.getpassword(), "12345678");
+		String Username=excel.getStringTestData("LoginTest", 0, 0);
+		String Password=excel.getStringTestData("LoginTest", 0, 1);
+		
+	    Library.custom_SendKeys(login.getEmail(), Username);
+	    Library.custom_SendKeys(login.getpassword(), Password);
 		Library.custom_Click(login.getlogin());
 		
 	}

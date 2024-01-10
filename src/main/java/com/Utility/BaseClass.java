@@ -2,22 +2,39 @@ package com.Utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
 	public static WebDriver driver;
+	public static ExceldataProvider excel;
+	public static ConfigdataProvider config;
 	
+	@BeforeSuite
+	public void BS() throws Exception {
+		excel=new ExceldataProvider();
+		config=new ConfigdataProvider();
+	}
+	
+	@Parameters("BrowserName")
 	@BeforeMethod
-	public void setUp() {
+	public void setUp(String BrowserName) {
 		// Browser Open
-		
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
-		driver.get("https://www.facebook.com/");
+		if(BrowserName.equalsIgnoreCase(config.getBrowsername())) {
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
+		}
+		else if(BrowserName.equalsIgnoreCase(config.getBrowserEdge())) {
+			WebDriverManager.edgedriver().setup();
+			driver=new EdgeDriver();
+		}
+		driver.get(config.getBaseUrl());
 		driver.manage().window().maximize();
 	}
 	
