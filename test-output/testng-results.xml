@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-10T09:26:07 IST" name="Suite" finished-at="2024-01-10T09:26:23 IST" duration-ms="15748">
+  <suite started-at="2024-01-11T09:21:25 IST" name="Suite" finished-at="2024-01-11T09:21:36 IST" duration-ms="10503">
     <groups>
     </groups>
-    <test started-at="2024-01-10T09:26:07 IST" name="TestChrome" finished-at="2024-01-10T09:26:15 IST" duration-ms="7367">
+    <test started-at="2024-01-11T09:21:25 IST" name="Test" finished-at="2024-01-11T09:21:36 IST" duration-ms="10503">
       <class name="com.Test.VerifyLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Test.VerifyLoginTest@434a63ab]" started-at="2024-01-10T09:26:07 IST" name="setUp" finished-at="2024-01-10T09:26:13 IST" duration-ms="5583" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:com.Test.VerifyLoginTest@492691d7]" started-at="2024-01-11T09:21:25 IST" name="BS" finished-at="2024-01-11T09:21:25 IST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Test.VerifyLoginTest@492691d7]" started-at="2024-01-11T09:21:25 IST" name="setUp" finished-at="2024-01-11T09:21:29 IST" duration-ms="3852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,42 +22,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_TC001()[pri:0, instance:com.Test.VerifyLoginTest@434a63ab]" started-at="2024-01-10T09:26:13 IST" name="verify_TC001" finished-at="2024-01-10T09:26:14 IST" duration-ms="774" status="PASS">
+        <test-method signature="verify_TC001()[pri:0, instance:com.Test.VerifyLoginTest@492691d7]" started-at="2024-01-11T09:21:29 IST" name="verify_TC001" finished-at="2024-01-11T09:21:30 IST" duration-ms="397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_TC001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.VerifyLoginTest@434a63ab]" started-at="2024-01-10T09:26:14 IST" name="tearDown" finished-at="2024-01-10T09:26:15 IST" duration-ms="943" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.VerifyLoginTest@492691d7]" started-at="2024-01-11T09:21:31 IST" name="tearDown" finished-at="2024-01-11T09:21:32 IST" duration-ms="819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Test.VerifyLoginTest -->
-    </test> <!-- TestChrome -->
-    <test started-at="2024-01-10T09:26:15 IST" name="TestEdge" finished-at="2024-01-10T09:26:23 IST" duration-ms="8340">
-      <class name="com.Test.VerifyLoginTest">
-        <test-method is-config="true" signature="BS()[pri:0, instance:com.Test.VerifyLoginTest@b9b00e0]" started-at="2024-01-10T09:26:06 IST" name="BS" finished-at="2024-01-10T09:26:07 IST" duration-ms="1098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Test.VerifyLoginTest@b9b00e0]" started-at="2024-01-10T09:26:15 IST" name="setUp" finished-at="2024-01-10T09:26:22 IST" duration-ms="6781" status="PASS">
+      <class name="com.Test.VerifyHomepageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.Test.VerifyHomepageTest@3daf7722]" started-at="2024-01-11T09:21:32 IST" name="setUp" finished-at="2024-01-11T09:21:35 IST" duration-ms="2955" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Edge]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_TC001()[pri:0, instance:com.Test.VerifyLoginTest@b9b00e0]" started-at="2024-01-10T09:26:22 IST" name="verify_TC001" finished-at="2024-01-10T09:26:22 IST" duration-ms="702" status="PASS">
+        <test-method signature="veriftTC_002()[pri:0, instance:com.Test.VerifyHomepageTest@3daf7722]" started-at="2024-01-11T09:21:35 IST" name="veriftTC_002" finished-at="2024-01-11T09:21:35 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_TC001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.VerifyLoginTest@b9b00e0]" started-at="2024-01-10T09:26:22 IST" name="tearDown" finished-at="2024-01-10T09:26:23 IST" duration-ms="852" status="PASS">
+        </test-method> <!-- veriftTC_002 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Test.VerifyHomepageTest@3daf7722]" started-at="2024-01-11T09:21:35 IST" name="tearDown" finished-at="2024-01-11T09:21:36 IST" duration-ms="770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Test.VerifyLoginTest -->
-    </test> <!-- TestEdge -->
+      </class> <!-- com.Test.VerifyHomepageTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

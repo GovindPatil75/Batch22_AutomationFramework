@@ -18,9 +18,9 @@ public class VerifyLoginTest extends BaseClass{
 		String Username=excel.getStringTestData("LoginTest", 0, 0);
 		String Password=excel.getStringTestData("LoginTest", 0, 1);
 		
-	    Library.custom_SendKeys(login.getEmail(), Username);
-	    Library.custom_SendKeys(login.getpassword(), Password);
-		Library.custom_Click(login.getlogin());
+	    Library.custom_SendKeys(login.getEmail(), Username,"Email Id");
+	    Library.custom_SendKeys(login.getpassword(), Password ,"Password");
+		Library.custom_Click(login.getlogin() ,"Login Button");
 		
 	}
 	
