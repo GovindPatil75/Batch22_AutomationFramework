@@ -1,5 +1,7 @@
 package com.Utility;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -34,6 +36,7 @@ public class BaseClass {
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 		}
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(config.getBaseUrl());
 		driver.manage().window().maximize();
 	}
