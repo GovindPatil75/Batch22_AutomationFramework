@@ -8,7 +8,7 @@ public class ConfigdataProvider {
 	Properties pro;
 	public ConfigdataProvider() throws Exception {
 		
-		String filepath="C:\\Users\\Dell\\eclipse-workspace\\Batch22_AutomationFramework\\Config\\config.Properties";
+		String filepath=System.getProperty("user.dir")+"\\Config\\config.Properties";
 		FileInputStream file=new FileInputStream(filepath);
 		pro=new Properties();
 		pro.load(file);
