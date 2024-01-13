@@ -25,3 +25,47 @@ Reports : for reporting purpose we have Extent Reports ,its genrate beatiful htm
            all test Steps execution with status and Screenshot in Base 64 format.
 version Control Tool : used git repository for version control and store scripts .
 Jenkins : by using jenkins we schedule daily Automation script in nightly runs .Test result shared to peers after executions.
+========================================================================
+
+Selenium Waits 
+===================
+No such Element Exception 
+
+thread.sleep(3000); // 3 sec
+
+Implicit wait 
+===================
+globally all ELement Applicable 
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+Expilcit wait
+----------------
+Applicable -- Perticular WebElement 
+
+with condition --
+
+WebDriverwait wait=new WebDriverwait(driver,5);
+wait.until(ExpectedConditions.condition(element));
+
+Fluent wait
+==============
+30 sec ---5-5-5-5-5-5 -ignore exception 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
